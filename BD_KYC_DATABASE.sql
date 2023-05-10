@@ -1,0 +1,8 @@
+
+CREATE DATABASE kyc_database;
+
+CREATE USER kyc_user WITH ENCRYPTED PASSWORD 'kyc_pass';
+
+GRANT ALL PRIVILEGES ON DATABASE kyc_database TO kyd_user;
+
+CREATE EXTENSION IF NOT EXISTS pgcrypto;
