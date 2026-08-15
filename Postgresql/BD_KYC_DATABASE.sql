@@ -3,7 +3,7 @@ CREATE DATABASE kyc_database;
 
 CREATE USER kyc_user WITH ENCRYPTED PASSWORD 'kyc_pass';
 
-ALTER USER kyc_user OWNER TO kyc_database;
+ALTER DATABASE kyc_database OWNER TO kyc_user;
 
 GRANT ALL PRIVILEGES ON DATABASE kyc_database TO kyc_user;
 
